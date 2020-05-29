@@ -1,0 +1,38 @@
+@mixin circle($radius) {
+    width: $radius;
+    height: $radius;
+    border-radius: 50%;
+}
+@mixin placeholder() {
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        @content;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        @content;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        @content;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        @content;
+      }
+}
+
+// MEDIA MIXINS
+@mixin tablet-portrait() {
+    @media screen and (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin tablet-landscape() {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin desctop() {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
