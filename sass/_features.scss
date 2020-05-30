@@ -1,4 +1,4 @@
-.promo {
+.features {
     margin-bottom: 100px;
     &__grid {
         display: grid;
@@ -14,20 +14,11 @@
         }
     }
     &__title {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 50px;
-        line-height: 70px;
+        @extend %title;
         color: #0B132A;
-    }
-    &__title--bold {
-        font-weight: 700;
     }
     &__text {
         @extend %text;
-    }
-    &__text--bold {
-        font-weight: 700;
     }
     &__btn {
         @extend %btn;
@@ -40,5 +31,32 @@
     }
     &__image {
         width: 100%;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    &__line {
+        @extend %text-small;
+        padding-left: 32px;
+        position: relative;
+        margin: 20px 0;
+    }
+    &__line::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        background: url(../images/ic-list-bg-green.svg)center no-repeat;
+    }
+    &__item--narrow {
+        @include tablet-landscape {
+        max-width: 383px;
+        margin-left: 150px;
+        }
     }
 }
