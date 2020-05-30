@@ -4,6 +4,9 @@
     align-items: center;
 }
 %btn {
+    text-decoration: none;
+    outline: none;
+    user-select: none;
     @extend %flex-centre;
     border: 1px solid $red;
     background: white;
