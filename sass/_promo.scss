@@ -1,0 +1,46 @@
+.promo {
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        @include tablet-landscape {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__item {
+        text-align: center;
+        @include tablet-landscape {
+            text-align: left;
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 70px;
+        color: #0B132A;
+    }
+    &__title--bold {
+        font-weight: 700;
+    }
+    &__text {
+        @extend %text;
+    }
+    &__text--bold {
+        font-weight: 700;
+    }
+    &__btn {
+        @extend %btn;
+        @extend %btn-huge;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        @include tablet-landscape {
+            margin: 30px 0 0 0;
+        }
+    }
+    &__canvas {
+        // width: 280px;
+    }
+    &__image {
+        width: 100%;
+    }
+}
