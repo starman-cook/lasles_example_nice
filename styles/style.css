@@ -46,7 +46,7 @@
   color: #0B132A;
 }
 
-.comments__name, .footer__title, .header__burger {
+.comments__name, .footer__title, .prices__small-title, .header__burger {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -383,6 +383,17 @@ body {
 
 .prices {
   margin-bottom: 150px;
+}
+.prices__title {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.prices__text {
+  max-width: 555px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 .prices__grid {
   display: grid;

@@ -2,9 +2,16 @@
     margin-bottom: 150px;
     &__title {
         @extend %title;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
     &__text {
         @extend %text;
+        max-width: 555px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 60px;
     }
     &__grid {
         display: grid;
