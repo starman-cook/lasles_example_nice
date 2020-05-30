@@ -1,0 +1,89 @@
+.prices {
+    margin-bottom: 150px;
+    &__title {
+        @extend %title;
+    }
+    &__text {
+        @extend %text;
+    }
+    &__grid {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        @include tablet-landscape {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @include desctop {
+            grid-gap: 50px;
+        }
+    }
+    &__item {
+        margin-left: -10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 60px;
+        background: white;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        @include tablet-portrait {
+            margin: 0;
+        }
+    }
+    &__item:hover {
+        border-color: $red;
+    }
+    &__image {
+        margin-bottom: 30px;
+    }
+    &__small-title {}
+    &__list {
+        text-align: left;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    &__line {
+        @extend %text-small;
+        padding-left: 32px;
+        position: relative;
+        margin: 20px 0;
+    }
+    &__line::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        background: url(../images/ic-check-prices.svg)center no-repeat;
+    }
+    &__price {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #0B132A;
+    }
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__price--nobold {
+        font-weight: 400;
+        color: #4F5665;
+    }
+    &__btn {
+        @extend %btn;
+        @extend %btn-big;
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -20,6 +20,7 @@
     &:hover {
         background: $red;
         color: white;
+        box-shadow: 0 1px 10px 7px rgba(245, 56, 56, 0.4);
     }
 }
 %btn-big {
@@ -32,7 +33,6 @@
     width: 250px;
     height: 60px;
     border-radius: 10px;
-    box-shadow: 0 2px 3px 3px rgba(245, 56, 56, 0.35);
 }
 %title {
     font-style: normal;
