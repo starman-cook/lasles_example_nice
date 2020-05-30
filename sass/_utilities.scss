@@ -3,3 +3,57 @@
     justify-content: center;
     align-items: center;
 }
+%btn {
+    @extend %flex-centre;
+    border: 1px solid $red;
+    background: white;
+    height: 45px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $red;
+    transition: all 0.3s;
+    &:hover {
+        background: $red;
+        color: white;
+    }
+}
+%btn-big {
+    width: 178px;
+}
+%btn-small {
+    width: 150px;
+}
+%btn-huge {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 3px rgba(245, 56, 56, 0.35);
+}
+%title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    color: #0B132A;
+}
+%title-small {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #0b132a;
+}
+%text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4f5665;
+}
+%text-small {
+    font-size: 14px;
+    line-height: 30px;
+    color: #4f5665;
+}
