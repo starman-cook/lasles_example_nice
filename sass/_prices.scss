@@ -37,7 +37,9 @@
     &__image {
         margin-bottom: 30px;
     }
-    &__small-title {}
+    &__small-title {
+        @extend %title-small;
+    }
     &__list {
         text-align: left;
         list-style: none;

@@ -38,7 +38,7 @@
   border-radius: 10px;
 }
 
-.subscribe__title, .map__title, .prices__title, .features__title {
+.comments__title, .subscribe__title, .map__title, .prices__title, .features__title {
   font-style: normal;
   font-weight: 500;
   font-size: 35px;
@@ -46,7 +46,7 @@
   color: #0B132A;
 }
 
-.footer__title, .header__burger {
+.comments__name, .footer__title, .header__burger {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -54,7 +54,7 @@
   color: #0b132a;
 }
 
-.footer__copyrights, .footer__link, .footer__text, .subscribe__text, .map__text, .prices__text, .features__text, .promo__text {
+.comments__comment, .comments__rate, .comments__text, .footer__copyrights, .footer__link, .footer__text, .subscribe__text, .map__text, .prices__text, .features__text, .promo__text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -62,7 +62,7 @@
   color: #4f5665;
 }
 
-.prices__line, .features__line {
+.comments__location, .prices__line, .features__line {
   font-size: 14px;
   line-height: 30px;
   color: #4f5665;
@@ -550,6 +550,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .subscribe {
   position: relative;
   z-index: 0;
@@ -707,6 +708,148 @@ body {
 }
 .logo--footer {
   margin-top: 18px;
+}
+
+.comments__title {
+  max-width: 447px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.comments__text {
+  max-width: 555px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.comments__grid {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr;
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 1024px) {
+  .comments__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.comments__item {
+  cursor: pointer;
+  padding: 30px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+.comments__item:hover {
+  border-color: #f53838;
+}
+.comments__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comments__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.comments__image {
+  width: 100%;
+}
+.comments__name-box {
+  display: flex;
+  flex-direction: column;
+}
+.comments__rate {
+  color: #0b132a;
+  padding-right: 20px;
+  position: relative;
+}
+.comments__rate::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -60%);
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../images/star-rating.svg) no-repeat;
+}
+.comments__comment {
+  color: #0b132a;
+}
+.comments__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 600px) {
+  .comments__buttons {
+    flex-direction: row;
+  }
+}
+.comments__orientation {
+  margin-bottom: 40px;
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+}
+@media screen and (min-width: 600px) {
+  .comments__orientation {
+    margin-bottom: 0;
+  }
+}
+.comments__ovals {
+  display: inline-block;
+  text-decoration: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #DDE0E4;
+}
+.comments__ovals--long {
+  width: 45px;
+  border-radius: 10px;
+}
+.comments__ovals:hover {
+  background: #f53838;
+}
+.comments__ovals:active {
+  background: #f53838;
+}
+.comments__arrows {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+  align-items: center;
+}
+.comments__arrow--left {
+  background: white url(../images/arrow-red-left.svg);
+}
+.comments__arrow--right {
+  background: white url(../images/arrow-red-right.svg);
+}
+.comments__arrow--left:hover {
+  background: #f53838 url(../images/arrow-white-left.svg) center no-repeat;
+}
+.comments__arrow--right:hover {
+  background: #f53838 url(../images/arrow-white-right.svg) center no-repeat;
+}
+.comments__arrow {
+  text-decoration: none;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #f53838;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
