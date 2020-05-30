@@ -40,5 +40,49 @@
     &__items {
         @extend %flex-centre;
     }
+    &__link--netflix {
+        background: url(../images/ic-netflix.svg);
+    }
+    &__link--reddit {
+        background: url(../images/ic-reddit.svg);
+    }
+    &__link--amazon {
+        background: url(../images/ic-amazon.svg);
+    }
+    &__link--discord {
+        background: url(../images/ic-discord.svg);
+    }
+    &__link--spotify {
+        background: url(../images/ic-spotify.svg);
+    }
+    &__link--netflix:hover {
+        background: url(../images/ic-netflix-hover.svg);
+    }
+    &__link--reddit:hover {
+        background: url(../images/ic-reddit-hover.svg);
+    }
+    &__link--amazon:hover {
+        background: url(../images/ic-amazon-hover.svg);
+    }
+    &__link--discord:hover {
+        background: url(../images/ic-discord-hover.svg);
+    }
+    &__link--spotify:hover {
+        background: url(../images/ic-spotify-hover.svg);
+    }
+    &__link {
+        text-decoration: none;
+        width: 190px;
+        height: 60px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__link:hover {
+        // text-decoration: none;
+        // width: 190px;
+        // height: 60px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
     &__icons {}
 }

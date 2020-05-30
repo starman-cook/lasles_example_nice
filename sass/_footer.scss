@@ -1,0 +1,59 @@
+.footer {
+    background: $gray;
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    &__item {}
+    &__text {
+        @extend %text;
+    }
+    &__text--bold {
+        font-weight: 500;
+    }
+    &__nav {}
+    &__nav--social {
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        @extend %text;
+        text-decoration: none;
+    }
+    &__link:hover {
+        color: $red;
+    }
+    &__link-social {
+        display: inline-block;
+        @include circle(32px);
+        @extend %flex-centre;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-shadow: 0 1px 4px 1px rgba(150, 150, 150, 0.5);
+    }
+    &__link-social--fb {
+        background: $red center center url(../images/ic-fb.svg);
+    }
+    &__link-social--twitter {
+        background: $red center center url(../images/ic-twitter.svg);
+    }
+    &__link-social--insta {
+        background: $red center center url(../images/ic-insta.svg);
+    }
+    &__link-social:hover {
+        transform: scale(1.1);
+    }
+    &__copyrights {
+        @extend %text;
+        color: #AFB5C0;
+    }
+    &__copyrights--bold {
+        font-weight: 500;
+    }
+    &__title {
+        @extend %title-small;
+    }
+
+}

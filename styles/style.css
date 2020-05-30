@@ -1,4 +1,4 @@
-.map__items, .subscribe__btn, .prices__btn, .features__btn, .promo__btn, .buttons__btn {
+.footer__link-social, .map__items, .subscribe__btn, .prices__btn, .features__btn, .promo__btn, .buttons__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,7 @@
   color: #0B132A;
 }
 
-.header__burger {
+.footer__title, .header__burger {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -54,7 +54,7 @@
   color: #0b132a;
 }
 
-.subscribe__text, .map__text, .prices__text, .features__text, .promo__text {
+.footer__copyrights, .footer__link, .footer__text, .subscribe__text, .map__text, .prices__text, .features__text, .promo__text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -509,6 +509,47 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
+.map__link--netflix {
+  background: url(../images/ic-netflix.svg);
+}
+.map__link--reddit {
+  background: url(../images/ic-reddit.svg);
+}
+.map__link--amazon {
+  background: url(../images/ic-amazon.svg);
+}
+.map__link--discord {
+  background: url(../images/ic-discord.svg);
+}
+.map__link--spotify {
+  background: url(../images/ic-spotify.svg);
+}
+.map__link--netflix:hover {
+  background: url(../images/ic-netflix-hover.svg);
+}
+.map__link--reddit:hover {
+  background: url(../images/ic-reddit-hover.svg);
+}
+.map__link--amazon:hover {
+  background: url(../images/ic-amazon-hover.svg);
+}
+.map__link--discord:hover {
+  background: url(../images/ic-discord-hover.svg);
+}
+.map__link--spotify:hover {
+  background: url(../images/ic-spotify-hover.svg);
+}
+.map__link {
+  text-decoration: none;
+  width: 190px;
+  height: 60px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.map__link:hover {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .subscribe {
   box-shadow: 0 -10px 12px 1px rgba(150, 150, 150, 0.1);
   max-width: 1140px;
@@ -552,6 +593,55 @@ body {
   .subscribe__text {
     text-align: left;
   }
+}
+.footer {
+  background: #f8f8f8;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer__text--bold {
+  font-weight: 500;
+}
+.footer__nav--social {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__link {
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: #f53838;
+}
+.footer__link-social {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 4px 1px rgba(150, 150, 150, 0.5);
+}
+.footer__link-social--fb {
+  background: #f53838 center center url(../images/ic-fb.svg);
+}
+.footer__link-social--twitter {
+  background: #f53838 center center url(../images/ic-twitter.svg);
+}
+.footer__link-social--insta {
+  background: #f53838 center center url(../images/ic-insta.svg);
+}
+.footer__link-social:hover {
+  transform: scale(1.1);
+}
+.footer__copyrights {
+  color: #AFB5C0;
+}
+.footer__copyrights--bold {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
