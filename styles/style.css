@@ -1,10 +1,10 @@
-.map__items, .prices__btn, .features__btn, .promo__btn, .buttons__btn {
+.map__items, .subscribe__btn, .prices__btn, .features__btn, .promo__btn, .buttons__btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.prices__btn, .features__btn, .promo__btn, .buttons__btn {
+.subscribe__btn, .prices__btn, .features__btn, .promo__btn, .buttons__btn {
   text-decoration: none;
   outline: none;
   user-select: none;
@@ -18,7 +18,7 @@
   color: #f53838;
   transition: all 0.3s;
 }
-.prices__btn:hover, .features__btn:hover, .promo__btn:hover, .buttons__btn:hover {
+.subscribe__btn:hover, .prices__btn:hover, .features__btn:hover, .promo__btn:hover, .buttons__btn:hover {
   background: #f53838;
   color: white;
   box-shadow: 0 1px 10px 7px rgba(245, 56, 56, 0.4);
@@ -32,13 +32,13 @@
   width: 150px;
 }
 
-.features__btn, .promo__btn {
+.subscribe__btn, .features__btn, .promo__btn {
   width: 250px;
   height: 60px;
   border-radius: 10px;
 }
 
-.map__title, .prices__title, .features__title {
+.subscribe__title, .map__title, .prices__title, .features__title {
   font-style: normal;
   font-weight: 500;
   font-size: 35px;
@@ -54,7 +54,7 @@
   color: #0b132a;
 }
 
-.map__text, .prices__text, .features__text, .promo__text {
+.subscribe__text, .map__text, .prices__text, .features__text, .promo__text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -507,6 +507,50 @@ body {
 @media screen and (min-width: 1200px) {
   .map__grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+.subscribe {
+  box-shadow: 0 -10px 12px 1px rgba(150, 150, 150, 0.1);
+  max-width: 1140px;
+  border-radius: 10px;
+  background: white;
+  padding: 0 70px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 600px) {
+  .subscribe {
+    flex-direction: row;
+  }
+}
+.subscribe__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 600px) {
+  .subscribe__left {
+    align-items: flex-start;
+  }
+}
+.subscribe__title {
+  max-width: 372px;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .subscribe__title {
+    text-align: left;
+  }
+}
+.subscribe__text {
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .subscribe__text {
+    text-align: left;
   }
 }
 

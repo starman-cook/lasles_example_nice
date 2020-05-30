@@ -1,0 +1,46 @@
+.subscribe {
+    box-shadow: 0 -10px 12px 1px rgba(150, 150, 150, 0.1);
+    max-width: 1140px;
+    // min-height: 233px;
+    border-radius: 10px;
+    background: white;
+    padding: 0 70px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet-portrait {
+        flex-direction: row;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include tablet-portrait {
+            align-items: flex-start;
+        }
+    }
+    &__title {
+        @extend %title;
+        max-width: 372px;
+        text-align: center;
+        @include tablet-portrait {
+            text-align: left;
+        }
+    }
+    &__text {
+        @extend %text;
+        text-align: center;
+        @include tablet-portrait {
+            text-align: left;
+        }
+    }
+    &__button {
+    
+    }
+    &__btn {
+        @extend %btn;
+        @extend %btn-huge;
+    }
+}
