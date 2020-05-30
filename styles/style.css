@@ -551,11 +551,14 @@ body {
   background-repeat: no-repeat;
 }
 .subscribe {
+  position: relative;
+  z-index: 0;
+  margin-bottom: -143px;
   box-shadow: 0 -10px 12px 1px rgba(150, 150, 150, 0.1);
   max-width: 1140px;
   border-radius: 10px;
   background: white;
-  padding: 0 70px;
+  padding: 40px 70px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -595,14 +598,66 @@ body {
   }
 }
 .footer {
+  z-index: -1;
+  padding-top: 186px;
   background: #f8f8f8;
 }
 .footer__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 600px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__grid {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+  }
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__item {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__item--push-right {
+    margin-left: 65px;
+  }
+}
+.footer__text {
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 340px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    text-align: left;
+  }
 }
 .footer__text--bold {
   font-weight: 500;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__nav {
+    align-items: flex-start;
+  }
 }
 .footer__nav--social {
   width: 150px;
@@ -612,11 +667,18 @@ body {
 }
 .footer__link {
   text-decoration: none;
+  margin: 15px 0;
+}
+@media screen and (min-width: 1200px) {
+  .footer__link {
+    margin: 5px 0;
+  }
 }
 .footer__link:hover {
   color: #f53838;
 }
 .footer__link-social {
+  margin-bottom: 30px;
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -642,6 +704,9 @@ body {
 }
 .footer__copyrights--bold {
   font-weight: 500;
+}
+.logo--footer {
+  margin-top: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

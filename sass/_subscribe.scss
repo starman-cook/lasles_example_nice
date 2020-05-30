@@ -1,10 +1,12 @@
 .subscribe {
+    position: relative;
+    z-index: 0;
+    margin-bottom: -143px;
     box-shadow: 0 -10px 12px 1px rgba(150, 150, 150, 0.1);
     max-width: 1140px;
-    // min-height: 233px;
     border-radius: 10px;
     background: white;
-    padding: 0 70px;
+    padding: 40px 70px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
